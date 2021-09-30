@@ -13,12 +13,10 @@ let package = Package(
             name: "CTALib",
             exclude: [
                 "tools",
-                "ta_abstract/excel_glue.c",
             ],
             cSettings: [
                 .headerSearchPath("ta_func/**"),
                 .headerSearchPath("ta_common/**"),
-                .headerSearchPath("ta_abstract/**"),
             ]
         ),
     ]

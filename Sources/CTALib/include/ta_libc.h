@@ -43,9 +43,5 @@
     #include "ta_func.h"
 #endif
 
-#ifndef TA_ABSTRACT_H
-   #include "ta_abstract.h"
-#endif
-
 #endif
 
