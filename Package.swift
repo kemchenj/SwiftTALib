@@ -11,9 +11,6 @@ let package = Package(
     targets: [
         .target(
             name: "CTALib",
-            exclude: [
-                "tools",
-            ],
             cSettings: [
                 .headerSearchPath("ta_func/**"),
                 .headerSearchPath("ta_common/**"),
