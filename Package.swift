@@ -6,9 +6,14 @@ import PackageDescription
 let package = Package(
     name: "SwiftTALib",
     products: [
+        .library(name: "TALib", targets: ["TALib"]),
         .library(name: "CTALib", targets: ["CTALib"]),
     ],
     targets: [
+        .target(
+            name: "TALib",
+            dependencies: ["CTALib"]
+        ),
         .target(
             name: "CTALib",
             cSettings: [
